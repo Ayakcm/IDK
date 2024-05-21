@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+
+:root {
+    --main-color: #A4529C;
+    --beige: #e7d9c4f5;
+    --orange: #E07724;
+    --white: #fff;
+    --black: #010100;
+    --light-color: #888;
+    --light-eg: #eee;
+    --green: rgb(60, 169, 172);
+
+    width: 100%;
+
+
+}
+
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+
+}
+
+html {
+    font-size: 62.5%;
+
+    scroll-behavior: var(--black);
+}
+
+/* height of the page  */
+html,
+body {
+    height: 100%;
+
+
+
+}
+
+/* لون الواجهة  */
+body {
+    background-color: #F0E3D3;
+
+}
+
+/* عرض السيت */
+
+
+
+.header {
+    background-color: #F0E3D3;
+    border-bottom: var(--border);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* بش نديروهم على سطر واحد  */
+.header .flex {
+    padding: 1.5rem 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header .flex .Logo {
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #000000;
+
+}
+
+.header .flex .search-form {
+    width: 50rem;
+    border-radius: .7rem;
+    display: flex;
+
+    padding: 1rem 2rem;
+    background-color: #F2D0AA;
+
+}
+
+.header .flex .search-form input {
+    width: 100%;
+    color: #F2D0AA;
+    background-color: #F2D0AA;
+    font-size: 2rem;
+    color: #010100;
+}
+
+/* Cursor=شكل الكليك كي نحطوها على السيرش  */
+.header .flex .search-form button {
+    background-color: #F2D0AA;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.header .flex .search-form button:hover {
+    color: #A4529C;
+}
+
+.header .flex .icons div {
+    font-size: 2rem;
+    color: #000000;
+    border-radius: .5rem;
+    height: 4.5rem;
+    cursor: pointer;
+    width: 3.5rem;
+    line-height: 4.4rem;
+}
+
+.header .flex .icons div:hover {
+    color: #83567e;
+}
+
+.header .flex .Sign button {
+    font-size: 1.5rem;
+    background-color: #99C1B9;
+    border-radius: 5%;
+    padding: 10px 12px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.header .flex .Sign button:hover {
+    background-color: #D88C99;
+}
+
+/* 
+.header .flex .Profile img {
+    height: 9rem;
+    width: 9rem;
+
+
+}
+
+.header .flex .Profile {
+    position: absolute;
+    border-radius: 5rem;
+    border-width: 20%;
+    top: 110%;
+    right: 0rem;
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 15rem;
+}
+
+.header .flex .Profile span {
+    color: #872371;
+    font-size: 1.5rem;
+}
+ */
+.footer {
+    padding: 0%;
+    padding-left: 0%;
+}
+
+/* to make them inline  */
+.footer .box-C {
+    display: flex;
+
+
+    background-color: #444444;
+    width: 1280px;
+    height: 200px;
+
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+/* to make distance between them */
+.footer .box-C .box {
+    flex: 2 20rem;
+    padding: 1.5rem;
+    border-width: 0cm;
+
+
+}
+
+
+.footer .box-C .box h3 {
+    font-size: 1.8rem;
+    color: #F2D0AA;
+    padding: .7rem 0;
+}
+
+.footer .box-C .box h3:hover {
+    color: #ffffff;
+}
+
+.footer .box-C .box p {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    padding: .7rem 0;
+}
+
+.footer .box-C .box p:hover {
+    color: #000000;
+}
+
+
+.footer .box-C .box a {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-eg);
+    padding: .7rem 0;
+}
+
+.footer .box-C .box a:hover {
+    color: black;
+}
+
+.footer .Created {
+    font-size: 2rem;
+    margin-top: 0.1rem;
+    padding: 1.5rem;
+    padding-top: 1rem;
+    text-align: center;
+    border-top: 0.2rem solid black;
+    background-color: #444444;
+    color: #F2D0AA;
+    width: 1280px;
+    height: 60px;
+
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.home .content {
+    flex: 2 2 40rem;
+}
+
+.home .image {
+    flex: 1 1 40rem;
+}
+
+.home .image img {
+    width: 50%;
+    float: right;
+
+}
+
+.home .content h4 {
+
+    color: black;
+    font-size: 4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 70px;
+
+}
+
+.home .content p {
+    font-size: 1.4rem;
+    font-family: 'Open sans', sans-serif;
+    margin-left: 70px;
+
+
+}
+
+/* تخلي الفوتر ديما مفيكسي تحت */
+#cont {
+    height: 100%;
+}
+
+.Subject {
+    background-color: #99C1B9;
+    width: 1280px;
+    height: 300px;
+
+
+}
+
+.Subject h3 {
+    font-size: 3rem;
+    color: whitesmoke;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    font-family: 'Outfit', sans-serif;
+
+
+}
+
+
+
+.Subject .gt button {
+    font-size: 2rem;
+    color: black;
+    border-radius: 5%;
+    padding: 10px 12px;
+    margin-left: 1.5%;
+    margin-top: 2%;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+
+
+.Subject .gt button:hover {
+    background-color: #656161;
+}
+
+.Subject .line {
+    border-left: 6px solid white;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    margin-left: -4%;
+    top: 500px;
+    width: 100%;
+}
+
+.subjects {
+    background-color: #99C1B9;
+    width: 1300px;
+    height: 1000px;
+
+}
+
+.subjects h2 {
+    font-family: 'Nunito', sans-serif;
+    margin-left: 5rem;
+
+    color: var(--light-eg);
+    font-size: 40px;
+}
+
+.line1 {
+    height: 5px;
+    width: 90%;
+    margin-left: 2rem;
+    margin-top: -30px;
+    margin-bottom: 90px;
+
+
+    background-color: #eee;
+
+
+}
+
+.subjects .videos {
+    margin-right: 2rem;
+    margin-top: -80px;
+    font-size: 40px;
+
+}
+
+
+.subjects .vid1 {
+    margin: 1rem;
+    margin-top: -30px;
+}
+
+.subjects .vid2 {
+    margin-left: 33%;
+    margin-top: -315px;
+
+}
+
+.subjects .vid3 {
+    margin-left: 66%;
+    margin-top: -300px;
+}
+
+.line2 {
+    height: 5px;
+    width: 90%;
+    margin-left: 2rem;
+    margin-top: 40px;
+    margin-bottom: 90px;
+
+
+    background-color: #eee;
+
+
+}
+
+.subjects .h2 {
+    margin-top: -70px;
+
+
+}
+
+.b1 {
+    margin-left: 1rem;
+    border-radius: 30px;
+}
+
+.b2 {
+    margin-left: 1.9rem;
+    border-radius: 30px;
+}
+
+.b3 {
+    margin-left: 3.rem;
+    border-radius: 30px;
+}
+
+.b5 {
+    margin-left: 1rem;
+    border-radius: 30px;
+}
